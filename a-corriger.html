@@ -1,0 +1,43 @@
+<!--
+1. Absence de <!DOCTYPE html> :
+   Le navigateur peut afficher la page en mode non standard.
+
+2. Absence de l'attribut lang dans la balise html :
+   La langue du document n'est pas indiquee aux navigateurs et outils d'accessibilite.
+
+3. Mauvaise fermeture des balises strong :
+   La balise p est fermee avant strong, ce qui cree une mauvaise imbrication HTML.
+
+4. Balise hr mal placee :
+   Elle coupe le paragraphe alors qu'elle doit representer une separation thematique.
+
+5. Identifiant id="info" utilise deux fois :
+   Un identifiant doit etre unique dans une meme page HTML.
+
+6. Attribut title sans guillemets :
+   La valeur contient plusieurs mots et doit etre placee entre guillemets.
+
+7. Contenu place apres la fermeture de html :
+   Le paragraphe final est en dehors du document HTML.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page à corriger</title>
+</head>
+<body>
+    
+
+<p>Bienvenue au <strong>club de code.</strong></p>
+<p>Nos ateliers ont lieu le mercredi de 14 h à 17 h.</p>
+<hr>
+
+<p id="info1">Salle B12</p>
+<p id="info2">Ouverts à tous les niveaux</p>
+<p> horaires du club:Entrée libre</p>
+<p>Contact : club@tek-up.tn<br>Tél. : 70 000 000</p>
+<p>Texte ajouté après la fin du document</p>
+</body>
+</html>
